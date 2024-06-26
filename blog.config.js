@@ -22,8 +22,6 @@ const BLOG = {
   '🌟 歡迎光臨Netma Studio！🚀, 🎨 釋放創意，一像素一像素地呈現 🎨, 🌐 創新與區塊鏈的相遇 🌐, 🛠️ 在數字領域中打造傑作 🛠️, 🌈 你的願景，我們的創作 🌈, 🤝 合作、創作、慶祝 🤝, 🚀 開創明日的數字藝術 🚀, ✨ 無限創意，無盡創新 ✨, 🎭 藝術與科技的結合 🎭, 🏅 在數字創作中卓越 🏅, 🎢 你獨特的數字遊樂場 🎢, 🔄 在每一次創作中進化 🔄, 🌟 沉浸式的數字體驗 🌟, ⚡ 創作。創新。主宰。⚡, 🎨 科技與藝術的交匯之地 🎨, 🎨 Unleashing Creativity, One Pixel at a Time 🎨, 🌐 Where Innovation Meets Blockchain 🌐, 🛠️ Crafting Masterpieces in the Digital Realm 🛠️, 🌈 Your Vision, Our Creation 🌈, 🤝 Collaborate, Create, Celebrate 🤝, 🚀 Pioneering Tomorrow’s Digital Artistry 🚀, ✨ Limitless Creativity, Boundless Innovation ✨, 🎭 Artistry Meets Technology 🎭, 🏅 Trusted Excellence in Digital Creation 🏅, 🎢 Your Unique Digital Playground 🎢, 🔄 Evolving with Every Creation 🔄, 🌟 Immersive Digital Experiences 🌟, ⚡ Create. Innovate. Dominate. ⚡, 🎨 Where Technology and Art Converge 🎨'
 
 
-  CUSTOM_MENU: process.env.NEXT_PUBLIC_CUSTOM_MENU || false, // 支持Menu 类型，从3.12.0版本起，各主题将逐步支持灵活的二级菜单配置，替代了原来的Page类型，此配置是试验功能、默认关闭。
-
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'NotionNext', // 您的昵称 例如 tangly1024
   BIO: process.env.NEXT_PUBLIC_BIO || '一个普通的干饭人🍚', // 作者简介
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://tangly1024.com', // 网站地址
