@@ -31,7 +31,7 @@ const NotionPage = ({ post, className }) => {
   // 页面首次打开时执行的勾子
   useEffect(() => {
     // 检测当前的url并自动滚动到对应目标
-    autoScrollToTarget()
+    autoScrollToHash()
   }, [])
 
   // 页面文章发生变化时会执行的勾子
@@ -144,9 +144,9 @@ const processGalleryImg = zoom => {
 }
 
 /**
- * 根据url参数自动滚动到指定区域
+ * 根据url参数自动滚动到锚位置
  */
-const autoScrollToTarget = () => {
+const autoScrollToHash = () => {
   setTimeout(() => {
     // 跳转到指定标题
     const needToJumpToTitle = window.location.hash
@@ -211,13 +211,16 @@ const Equation = dynamic(
   { ssr: false }
 )
 
-// 文档
-const Pdf = dynamic(
-  () => import('react-notion-x/build/third-party/pdf').then(m => m.Pdf),
-  {
-    ssr: false
-  }
-)
+// 原版文档
+// const Pdf = dynamic(
+//   () => import('react-notion-x/build/third-party/pdf').then(m => m.Pdf),
+//   {
+//     ssr: false
+//   }
+// )
+const Pdf = dynamic(() => import('@/components/Pdf').then(m => m.Pdf), {
+  ssr: false
+})
 
 // 美化代码 from: https://github.com/txs
 const PrismMac = dynamic(() => import('@/components/PrismMac'), {
